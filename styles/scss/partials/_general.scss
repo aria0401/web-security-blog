@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* color: $body-color; */
+}
+
+img {
+  width: 100%;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  margin: 6rem;
+}
+
+//CLASSES
+
+.error {
+  color: $error-color;
+}
+
+.f-08r {
+  font-size: 0.8rem;
+}
+
+.primary_button {
+  /* background: $btn-main-bg-color;
+  background: -webkit-linear-gradient(top, #f7dfa5, #f0c14b);
+  background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
+  border: $btn-border-color; */
+  box-shadow: $btn-box-shadow;
+  height: 40px;
+  padding: 0;
+  /* font-size: $form-font-size; */
+  background-color: $secondary-color-dark;
+  color: white;
+  border:transparent;
+
+  a{
+    color: white;
+
+  }
+
+  &:hover {
+    background: linear-gradient(to bottom, #21374be0, #192938e0);
+    color: white;
+  }
+}
+
+.secondary_button {
+  background: #eff0f3;
+  background: -webkit-linear-gradient(top, #f7f8fa, #e7e9ec);
+  background: linear-gradient(to bottom, #f7f8fa, #e7e9ec);
+  box-shadow: 0 1px 0 rgb(255 255 255 / 60%) inset;
+  font-size: $form-font-size;
+  border: $btn-border-color;
+
+  &:hover {
+    background: linear-gradient(to bottom, #f7f8fa, #cecfd1);
+  }
+}
+
+
+.tertiary_button{
+  background-color: transparent;
+  border: transparent;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.main_btn{
+  background-color: $secondary-color-orange;
+  color: white;
+  border: transparent;
+  border-radius: 24px;
+  padding: 10px 48px;
+}
+
+.btn:focus,
+a:focus,
+input:focus {
+  outline: none;
+  box-shadow: none !important;
+}
+
+.send-message {
+  text-align: center;
+}
+
+li.sidebar-li {
+  cursor: pointer;
+}
+
+.a-sm-txt {
+  font-size: $form-font-size;
+  color: $a-color;
+  &:hover {
+    color: $a-hover;
+  }
+}
+
+.hover-color {
+  &:hover {
+    color: $a-hover;
+  }
+}
+
+.d-none-desktop {
+  display: none;
+}
+
+.d-none-mobile {
+  display: block;
+}
+
+.min-h-100 {
+  min-height: 100px;
+}
+
+.w-10rem {
+  width: 10rem;
+}
+@media screen and (max-width: 450px) {
+  .d-none-desktop {
+    display: block;
+  }
+
+  .d-none-mobile {
+    display: none;
+  }
+}

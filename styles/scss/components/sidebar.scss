@@ -1,0 +1,73 @@
+//COLLAPSIBLE SIDEBAR
+
+#mySidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: $header-height;
+  left: -24px;
+  background-color: $accent-color;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  padding-left: 30px;
+
+  ul li {
+    list-style: none;
+  }
+
+  .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    text-decoration: none;
+    color: $body-color;
+  }
+
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    padding-top: 15px;
+  }
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: rgb(248, 245, 245);
+}
+
+#main-sidebar {
+  transition: margin-left 0.5s;
+  padding: 16px;
+}
+
+//STATIC SIDEBAR
+
+.sidebar-desktop {
+  border-right: $sidebar-line-color;
+  // height: 100vh;
+
+  ul {
+    list-style: none;
+    padding-left: 1rem;
+
+    li {
+      color: $body-color;
+      font-size: 0.9rem;
+      border-bottom: $sidebar-line-color;
+      width: 96%;
+
+      &:hover {
+        color: $a-hover;
+      }
+    }
+  }
+}

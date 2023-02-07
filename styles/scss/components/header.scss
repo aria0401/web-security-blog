@@ -1,0 +1,86 @@
+header {
+  display: flex;
+  justify-content: center;
+  height: $header-height;
+
+    nav.navbar {
+      width: 100%;
+      padding-inline: 4rem;
+    }
+
+    a{
+      text-decoration: none;
+      text-transform: uppercase;
+      margin-right: 4rem;
+      color: $secondary-color-dark;
+    }
+
+
+    div.nav-labels{
+      width: 80%;
+    }
+
+
+
+}
+
+header.dark{
+  height: 6rem;
+  background-color: $secondary-color-dark;
+  a{
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 4rem;
+    color: white
+  }
+}
+
+header.light{
+  height: 6rem;
+  background-color: $secondary-color;
+
+}
+
+
+header.admin{
+  display: flex;
+  justify-content: center;
+  height: 6rem;
+  background-color: $secondary-color-dark;
+  width: 100vw;
+  color: white;
+  align-items: center;
+
+}
+
+nav.admin{
+  height: 4rem;
+  display: flex;
+  background-color: $secondary-color;
+
+  button{
+    background-color: transparent;
+    color: #21374B;
+
+    a{
+      text-transform: uppercase;
+      color: #21374B;
+    }
+  }
+}
+
+
+div.user-nav{
+  background-color: $secondary-color;
+  height: 4rem;
+  align-items: center;
+  padding-left: 4rem;
+
+  a{
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 4rem;
+    color: #3A698B;
+    margin-right: 20px;
+  }
+}

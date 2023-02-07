@@ -1,0 +1,31 @@
+.myModal {
+  display: none;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 99;
+  overflow: hidden;
+}
+
+.myModal .overlay {
+  background-color: #00000073;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 99;
+}
+
+.myModal .myMessage {
+  position: absolute;
+  top: 30vh;
+  left: 40vw;
+  background-color: white;
+  padding: 40px;
+  z-index: 999;
+}
+/*# sourceMappingURL=modal.css.map */

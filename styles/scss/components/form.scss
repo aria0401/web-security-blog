@@ -1,0 +1,55 @@
+.container-form-page {
+  width: 350px;
+  margin: auto;
+  font-size: $form-font-size;
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .form {
+    border: $line-color;
+    border-radius: 4px;
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    .form-control {
+      /* height: $input-btn-height; */
+      font-size: $form-font-size;
+
+      &:focus {
+        /* border: transparent; */
+        outline: none;
+      }
+    }
+  }
+
+  .dropdown {
+    .dropdown-toggle {
+      font-size: $form-font-size;
+      color: $a-color;
+      &:hover {
+        color: $a-hover;
+      }
+    }
+
+    .dropdown-menu {
+      font-size: $form-font-size;
+
+      li a.dropdown-item {
+        color: $a-color;
+        background-color: none;
+        &:hover {
+          background-color: transparent;
+          color: $a-hover;
+        }
+      }
+    }
+
+    .dropdown-menu.show {
+      transform: translate(0px, 18px);
+    }
+  }
+}
